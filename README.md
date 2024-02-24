@@ -152,11 +152,11 @@ Join the vibrant CulturalXchange community by participating in discussions, shar
 
 ## Feedback
 
-We value your feedback and strive to continuously improve CulturalXchange to better serve your needs. Whether you have suggestions for new features, improvements to existing functionalities, or general feedback on your user experience, we encourage you to share your thoughts with us. Your input is instrumental in shaping the future development of CulturalXchange.
+We value your feedback and strive to continuously improve CulturalXchange to better serve your needs. Whether you have suggestions for new features, improvements to existing functionalities, or general feedback on your user experience, we encourage you to share your thoughts with us. Your input is instrumental in shaping the future development of CulturalXchange. (To be launched Soon)
 
 ### Feedback Submission
 
-To submit your feedback, please visit the "Feedback" section within the CulturalXchange platform. You can provide detailed feedback on specific features, report any issues or bugs encountered, or share your overall impressions of the platform. Your feedback will be carefully reviewed by our development team, and appropriate actions will be taken to address your concerns and incorporate your suggestions into future updates.
+To submit your feedback, please visit the "Feedback" section within the CulturalXchange platform. You can provide detailed feedback on specific features, report any issues or bugs encountered, or share your overall impressions of the platform. Your feedback will be carefully reviewed by our development team, and appropriate actions will be taken to address your concerns and incorporate your suggestions into future updates. (To be launched Soon)
 
 ### Community Feedback Forum
 
