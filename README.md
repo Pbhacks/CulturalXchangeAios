@@ -16,34 +16,33 @@ At its core, CulturalXchange is driven by a singular vision: to create an inclus
 Powering the heart of CulturalXchange's mobile experience is **React Native**, a versatile framework renowned for its ability to develop robust applications for both Android and iOS platforms seamlessly. Complemented by Firebase for backend services, CulturalXchange's mobile app promises a smooth and intuitive user experience across devices.
 
 <img src="https://reactnative.dev/img/header_logo.svg" title="React Native" alt="React Native" width="60" height="60">&nbsp;
-<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" title="Firebase" alt="Firebase" width="60" height="60">&nbsp;
 
 **Backend** <br>
 Fueling the backend operations of CulturalXchange's mobile app is a robust combination of **Node.js** and Firebase. This dynamic duo ensures efficient data management, seamless user authentication, and real-time updates, laying a solid foundation for a responsive and scalable mobile experience.
 
 <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" title="Node JS" alt="Node JS" width="60" height="60">&nbsp;
-<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" title="Firebase" alt="Firebase" width="60" height="60">&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/firebase/firebase-original-wordmark.svg" title="Firebase" alt="Firebase" width="60" height="60">
+<img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="60" height="60">&nbsp;
 
 **AI Integration** <br>
 CulturalXchange's mobile app integrates advanced AI technologies, including Google's Gemini AI, to enhance user engagement and deliver personalized content recommendations. By leveraging natural language processing and sentiment analysis, CulturalXchange elevates the mobile cultural exchange experience to new heights.
 
-<img src="https://www.gstatic.com/devrel-devsite/prod/vbd1866a7cbfd021e8353651dade690ca047cfb22473fd17fc1d0e8cbe5228e3/tensorflow/images/lockup.svg" title="Google AI" alt="Google AI" width="60" height="60">&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/google/google-original.svg" title="Google" alt="Google" width="60" height="60">&nbsp;
 
 **Database Management** <br>
 CulturalXchange's mobile app employs Firebase's real-time database capabilities for efficient data storage and retrieval. With Firebase, CulturalXchange ensures seamless synchronization of cultural content, enabling users to explore a diverse array of topics with ease.
 
-<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" title="Firebase" alt="Firebase" width="60" height="60">&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/firebase/firebase-original-wordmark.svg" title="Firebase" alt="Firebase" width="60" height="60">
 
 **Security Measures** <br>
 Security remains a top priority for CulturalXchange's mobile app. Through Firebase's authentication services and robust data encryption protocols, user data and privacy are safeguarded, instilling confidence and trust in the CulturalXchange community.
 
-<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" title="Firebase" alt="Firebase" width="60" height="60">&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/firebase/firebase-original-wordmark.svg" title="Firebase" alt="Firebase" width="60" height="60">
 
 **Scalability and Performance Optimization** <br>
 CulturalXchange's mobile app is engineered for scalability and optimal performance. Leveraging Firebase's cloud-based infrastructure and **React Native**'s efficiency, the app seamlessly accommodates increasing user traffic while delivering a responsive and immersive cultural exchange experience.
 
-<img src="https://firebase.google.com/images/brand-guidelines/logo-standard.png" title="Firebase" alt="Firebase" width="60" height="60">&nbsp;
-<img src="https://reactnative.dev/img/header_logo.svg" title="React Native" alt="React Native" width="60" height="60">&nbsp;
+<img src = "https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" width="60" height="60">&nbsp;
 
 ## Frontend
 
@@ -107,9 +106,15 @@ npm start
 
 In the relentless pursuit of accessibility, CulturalXchange is poised to unveil dedicated mobile applications for both Android and iOS platforms. These intuitive apps will extend the platform's reach, empowering users to embark on a cultural odyssey at their fingertips, regardless of time or place.
 
+<img src="https://github.com/devicons/devicon/blob/master/icons/gitlab/gitlab-original.svg" title="Android" alt="Android" width="60" height="60">&nbsp;
+
 **Android App:** CulturalXchange's Android application will leverage the platform's robust backend infrastructure and intuitive frontend design to deliver a seamless user experience tailored for the Android ecosystem. With features such as offline access to curated cultural content, push notifications for personalized updates, and enhanced multimedia capabilities, the Android app promises to be a gateway to a world of cultural exploration and discovery.
 
+<img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/android/android-original.svg" title="Android" alt="Android" width="60" height="60">&nbsp;
+
 **iOS App:** Simultaneously, CulturalXchange will launch its iOS application, designed to seamlessly integrate with Apple's ecosystem while delivering the same rich user experience and functionality as its Android counterpart. From immersive virtual tours to collaborative XR experiences, the iOS app will empower users to engage with cultural content in innovative and meaningful ways, fostering a sense of connection and understanding across diverse communities.
+
+<img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/apple/apple-original.svg" title="Apple" alt="Apple" width="60" height="60">&nbsp;
 
 **XR (Extended Reality):** Anticipating the inexorable march of technological progress, CulturalXchange embraces the frontier of extended reality technologies with open arms. Through the seamless integration of virtual and augmented reality, the platform aspires to transcend the confines of traditional interaction, offering users an immersive cultural tapestry that transcends the boundaries of imagination. CulturalXchange's XR experiences will be compatible with a wide range of devices, from standalone VR headsets to mobile AR platforms. By prioritizing accessibility and interoperability, CulturalXchange ensures that users can engage with XR content using the devices that best suit their preferences and technological capabilities.
 
@@ -118,6 +123,8 @@ In the relentless pursuit of accessibility, CulturalXchange is poised to unveil 
 ### Enhanced User Interface
 
 CulturalXchange is undergoing a significant overhaul in its user interface design, with a focus on enhancing user interaction and visual appeal. The revamped interface offers smoother navigation, intuitive controls, and visually captivating elements, ensuring an engaging browsing experience for users.
+
+<img src="https://github.com/devicons/devicon/blob/master/icons/maven/maven-original.svg" title="Android" alt="Android" width="60" height="60">&nbsp;
 
 ### Improved Content Recommendation
 
