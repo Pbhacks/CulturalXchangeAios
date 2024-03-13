@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7607692588",
+    "project_id": "culturalxchange-80950",
+    "storage_bucket": "culturalxchange-80950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7607692588:android:544ca09a2ad6ddec2bd089",
+        "android_client_info": {
+          "package_name": "com.CulturalXchange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7607692588-ns3370r0ckq14jqja9jo9kt05nuemf6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVVo6YbPwmH4F1H8fqgOaGvIdNrrXCNfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7607692588-ns3370r0ckq14jqja9jo9kt05nuemf6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
