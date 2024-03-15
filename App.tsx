@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { GluestackUIProvider } from '@gluestack-ui/themed';
-import { config } from '@gluestack-ui/config';
 import { firebase } from './config';
 import LogIn from './src/Screens/LogIn/LogIn';
 import Registration from './src/Screens/LogIn/Registration';
 import Communities from './src/Screens/Communities/Communities';
+import { StyleSheet, View } from 'react-native';
 
 export default function App() {
   const [initializing, setInitializing] = useState(true);
@@ -25,8 +24,8 @@ export default function App() {
   if (initializing) return null;
 
   return (
-    <GluestackUIProvider config={config}>
-      <NavigationContainer>
+    <NavigationContainer>
+      <View style={styles.container}>
         {user ? (
           <Communities />
         ) : (
@@ -36,7 +35,16 @@ export default function App() {
             {/* <Registration /> */}
           </>
         )}
-      </NavigationContainer>
-    </GluestackUIProvider>
+      </View>
+    </NavigationContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff', // Set your desired background color
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

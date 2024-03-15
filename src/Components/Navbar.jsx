@@ -1,11 +1,11 @@
 
-import { GluestackUIProvider, Text, Box } from "@gluestack-ui/themed"
+import { View, Text } from 'react-native'
 import React from 'react'
 
 export default function Navbar() {
   return (
-    <Box>
+    <View>
       <Text>Navbar</Text>
-    </Box>
+    </View>
   )
 }

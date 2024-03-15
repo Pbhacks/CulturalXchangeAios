@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { firebase } from '../../../config';
 import Colors from '../../Utils/Color';
-import { Text, Input, Button,InputField,FormControl,VStack,Heading,InputSlot,ButtonText,Icon } from "@gluestack-ui/themed";
-
-
+import { View, Text, TextInput, Button, TouchableOpacity, StyleSheet } from 'react-native';
 
 const LogIn = () => {
   const navigation = useNavigation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const loginUser = async () => {
     try {
@@ -19,59 +18,69 @@ const LogIn = () => {
     }
   };
 
-  const [showPassword, setShowPassword] = useState(false)
   const handleState = () => {
-    setShowPassword((showState) => {
-      return !showState
-    })
-  }
+    setShowPassword((showState) => !showState);
+  };
 
   return (
-    <FormControl
-      p="$4"
-      borderWidth="$1"
-      borderRadius="$lg"
-      borderColor="$borderLight300"
-      $dark-borderWidth="$1"
-      $dark-borderRadius="$lg"
-      $dark-borderColor="$borderDark800"
-    >
-      <VStack space="xl">
-        <Heading color="$text900" lineHeight="$md">
-          Login
-        </Heading>
-        <VStack space="xs">
-          <Text color="$text500" lineHeight="$xs">
-            Email
-          </Text>
-          <Input>
-            <InputField type="text" />
-          </Input>
-        </VStack>
-        <VStack space="xs">
-          <Text color="$text500" lineHeight="$xs">
-            Password
-          </Text>
-          <Input textAlign="center">
-            <InputField type={showPassword ? "text" : "password"} />
-            <InputSlot pr="$3" onPress={handleState}>
-              <Icon as={showPassword ? EyeIcon : EyeOffIcon}
-                // color="$darkBlue500"
-              />
-            </InputSlot>
-          </Input>
-        </VStack>
-        <Button
-          ml="auto"
-          onPress={() => {
-            setShowModal(false)
-          }}
-        >
-          <ButtonText color="$white">Save</ButtonText>
-        </Button>
-      </VStack>
-    </FormControl>
+    <View style={styles.container}>
+      <Text style={styles.heading}>Login</Text>
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Email</Text>
+        <TextInput
+          style={styles.input}
+          value={email}
+          onChangeText={(text) => setEmail(text)}
+          keyboardType="email-address"
+          autoCapitalize="none"
+        />
+      </View>
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Password</Text>
+        <View style={styles.passwordInput}>
+          <TextInput
+            style={styles.input}
+            value={password}
+            onChangeText={(text) => setPassword(text)}
+            secureTextEntry={!showPassword}
+          />
+        </View>
+      </View>
+      <Button title="Login" onPress={loginUser} />
+    </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 16,
+  },
+  heading: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 16,
+  },
+  inputContainer: {
+    marginBottom: 16,
+  },
+  label: {
+    fontSize: 16,
+    marginBottom: 8,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: 'gray',
+    borderRadius: 8,
+    padding: 10,
+  },
+  passwordInput: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  eyeIcon: {
+    position: 'absolute',
+    right: 10,
+  },
+});
 
 export default LogIn;
