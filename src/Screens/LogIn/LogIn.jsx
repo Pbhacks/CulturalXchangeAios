@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { firebase } from '../../../config';
-import Colors from '../../Utils/Color';
 import { View, Text, TextInput, Button, TouchableOpacity, StyleSheet } from 'react-native';
 
 const LogIn = () => {
@@ -10,7 +9,7 @@ const LogIn = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  const loginUser = async () => {
+  const handleLogin = async () => {
     try {
       await firebase.auth().signInWithEmailAndPassword(email, password);
     } catch (err) {
@@ -18,8 +17,27 @@ const LogIn = () => {
     }
   };
 
-  const handleState = () => {
-    setShowPassword((showState) => !showState);
+  const handleGoogleSignIn = async () => {
+    try {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      await firebase.auth().signInWithPopup(provider);
+      navigation.navigate('DefaultScreen'); // Navigate to your main screen after successful sign-in
+    } catch (err) {
+      alert(err.message);
+    }
+  };
+
+  const handleRegistration = async () => {
+    try {
+      await firebase.auth().createUserWithEmailAndPassword(email, password);
+      navigation.navigate('Login'); // Navigate back to login page after successful registration
+    } catch (err) {
+      alert(err.message);
+    }
+  };
+
+  const handleTogglePasswordVisibility = () => {
+    setShowPassword((prevState) => !prevState);
   };
 
   return (
@@ -44,9 +62,16 @@ const LogIn = () => {
             onChangeText={(text) => setPassword(text)}
             secureTextEntry={!showPassword}
           />
+          <Button title={showPassword ? "Hide" : "Show"} onPress={handleTogglePasswordVisibility} />
         </View>
       </View>
-      <Button title="Login" onPress={loginUser} />
+      <Button title="Login" onPress={handleLogin} />
+      <TouchableOpacity onPress={handleGoogleSignIn}>
+        <Text style={styles.googleSignInButton}>Sign in with Google</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={handleRegistration}>
+        <Text style={styles.registerLink}>Register</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -77,9 +102,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  eyeIcon: {
-    position: 'absolute',
-    right: 10,
+  googleSignInButton: {
+    marginTop: 20,
+    backgroundColor: '#4285F4', // Google blue color
+    color: 'white',
+    padding: 10,
+    borderRadius: 8,
+    textAlign: 'center',
+  },
+  registerLink: {
+    marginTop: 10,
+    color: 'blue',
+    textDecorationLine: 'underline',
   },
 });
 
